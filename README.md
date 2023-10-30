@@ -11,7 +11,7 @@ We re-purpose two story datasets for personalized story evaluation: **PerMPST** 
 
 
 The dataset statistic is listed below. More detailed information can be found in the paper and appendix.
-We provide several examples in *data/* directory, and the full dataset will be available in [Google Drive]().
+We provide several examples in *data/* directory, and the full dataset will be available soon.
 
 ![Dataset](figs/dataset.png)
 
