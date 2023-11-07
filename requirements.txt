@@ -1,0 +1,16 @@
+sentencepiece
+torch
+pandas
+matplotlib
+scikit-learn
+wandb
+datasets
+numpy
+wandb
+deepspeed
+flask
+flask_cors
+daal
+fire
+tokenizers
+transformers
