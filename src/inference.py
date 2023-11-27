@@ -152,7 +152,6 @@ if __name__ == "__main__":
             exit()
         prompts = make_prompt(mode, preference, plot)
         print(prompts)
-        prompts = []
     else:
         raise NotImplementedError
     
