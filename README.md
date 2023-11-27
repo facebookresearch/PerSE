@@ -33,7 +33,7 @@ $ pip install -r requirements.txt
 $ pip install -e .
 ```
 
-Before start, download PerMPST and PerDOC from the provided links. We provide *src/scripts/convert_data.py* to convert the original dataset to the training format. For example, to convert the sample data, the command is:
+Before start, download PerMPST and PerDOC from the provided links. We provide  `src/scripts/convert_data.py` to convert the original dataset to the training format. For example, to convert the sample data, the command is:
 
 ``` shell
 $ cd src
@@ -44,7 +44,7 @@ Then *PerMPST.k3.src.json* can be used for the training. For inference, we do no
 
 ### Training
 
-We use deepspeed to speed up the training phase. The config file for deepspeed is *src/configs/ds_config_zero3.json*. We use 8 x 80G A100 GPU for training, set the batch size to 4 and learning rate to 1e-5. More options can be found in *src/finetune.py*. The training command should be something like:
+We use deepspeed to speed up the training phase. The config file for deepspeed is `src/configs/ds_config_zero3.json`. We use 8 x 80G A100 GPU for training, set the batch size to 4 and learning rate to 1e-5. More options can be found in `src/finetune.py`. The training command should be something like:
 
 ``` shell
 $ cd src
@@ -53,7 +53,7 @@ $ deepspeed --num_gpus 8 finetune.py --data_file ../data/PerMPST.k3.src.json --s
 
 ### Inference
 
-We provide two modes for interence. One is to evaluate the test set (**evaluate**) and the other is to receive command line input (**interactive**). We refer readers to *src/inference.py* for detailed information. For evaluation, a typical inference command is:
+We provide two modes for interence. One is to evaluate the test set (**evaluate**) and the other is to receive command line input (**interactive**). We refer readers to `src/inference.py` for detailed information. For evaluation, a typical inference command is:
 
 ``` shell
 $ cd src
@@ -62,7 +62,7 @@ $ python inference.py --input_file ../data/PerMPST.k3.sample.jsonl --ckpt checkp
 
 ### Others
 
-We provide several scripts for post-process and to calculate the correlation. Please check *scripts/get_comparison.py* and *get_score.py* for more information.
+We provide several scripts for post-process and to calculate the correlation. Please check `scripts/get_comparison.py` and `get_score.py` for more information.
 
 ### Results
 

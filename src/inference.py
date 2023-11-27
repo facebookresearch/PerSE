@@ -121,7 +121,7 @@ def make_prompt(mode, preference, plot, format_type="oasst"):
 def get_options():
     args = argparse.ArgumentParser()
     # data options
-    args.add_argument("--mode", type=str, default='evaluate', choices=['test', 'interactive'])
+    args.add_argument("--mode", type=str, default='evaluate', choices=['evaluate', 'interactive'])
     args.add_argument("--input_file", type=str, default="../data/PerMPST.k3.sample.jsonl")
     args.add_argument("--save_file", type=str, default="../results/PerMPST.k3.result.jsonl")
     args.add_argument("--seed", type=int, default=42)
